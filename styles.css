@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #EEEEEE;
+    margin: 0px;
+}
+
+a{
+    text-decoration:none;
+    color: black
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #3E7C17;
+    color: white;
+    margin: 0px;
+    font-size: 24px;
+    align-items: center
+}
+
+.logo{
+    margin: 0px: 20px;
+    background-color:;
+    width: 55px;
+    height: 55px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+li{
+    margin-right: 15px;
+}
+
+li:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.menes{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.menes:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+    color: white;
+}
+
+.pog{
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.perfil{
+    display: flex;
+    width: 70vw;
+    margin: 0px auto;
+    background-color: #3E7C17; 
+    padding: 20px;
+    border-radius: 16px;
+    color: white;
+}
+
+.foto{
+    width: 500px;
+    border-radius: 12px 
+}
+
+#dale{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px
+}
+
+#titulo{
+    text-align: center;
+}
+
+#local{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer{
+    background-color: #3E7C17;
+    padding: 35px;
+}
+
+#copyright{
+    text-align: center;
+    color: white;
+    flex-direction: row;
+}
+
+#links{
+    align-items: center;
+    color: black;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 27px;
+}
+
+#enviar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
