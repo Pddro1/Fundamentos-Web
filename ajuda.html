@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loud</title>
     <link rel="icon" type="image/x-icon" href="assets/img/L logo.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
@@ -15,37 +15,63 @@
         <a href="home.html"><img class="logo" src="assets/img/L logo.png"></img></a>
         <ul>
             <li>
-                <a class="menes" href="#">Home</a>
+                <a class="menes" href="home.html">Home</a>
             </li>
             <li>
-                <a class="menes" href="ajuda.html">Ajuda</a>
+                <a class="menes" href="#">Ajuda</a>
             </li>
         </ul>
     </nav>
 </header>
-    <h1 class="entre em">Entre em contato comigo</h1>
+    
 
-        <form action="" class="form-control">
-            <div class="form-control">
+    <main class="contato">
+        <section class="form-control">
+        <form action="" >
+            <h3>Deixe seu Apoio</h3>
+
             <div>
                 <label for="nome">Nome:</label> 
-                <input type="text" id="nome"  placeholder="Entre com o seu Nome">
+                <input type="text" id="nome"  placeholder="Entre com o seu Nome" onkeyup="validaNome()">
             </div>
+            <div id="txtNome"></div>
 
             <div>
                 <label for="email">E-Mail:</label> 
-                <input type="text" id="email" placeholder="Entre com o seu E-mail">
+                <input type="text" id="email" placeholder="ex.: email@email.com" onkeyup="validaEmail()">
             </div>
+            <div id="txtEmail"></div>
 
             <div>
                 <label for="assunto">Assunto:</label>
-                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
             </div>
-        </div>
-            <button id="enviar"><a href="">Enviar</a></button>
-        </form>
+            <div id="txtAssunto"></div>
 
+            <button type="submit" onclick="enviar()">Enviar</button>
+        </form>
+        </section>
+
+        <section>
+            <h3>Local do Campeonato</h3>
+            <div class="endereco">
+            <p>Altıntepsi, Yeni Çiftlik Cd., 34035</p>
+            <p>Bayrampaşa/İstanbul, Turkey</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.1792012460933!2d29.00551451482937!3d41.10877722118432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab5ce5652f4c3%3A0x93d7757dd34b126d!2sVOLKSWAGEN%20ARENA!5e0!3m2!1sen!2sbr!4v1663942588540!5m2!1sen!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p id="copyright">Copyright &copy; Pedro Henrique @2022</p>
+            <a href="https://github.com/Pddro1" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" width="32px"/></a>
+            <a href="https://www.linkedin.com/in/pedro-camargo15/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="32px" /></a>
+            <a href="https://www.instagram.com/pdro_camargo/" target="_blank"><img src="assets/img/instagram.png" width="32px"></a>
+    </footer>
 
         
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>

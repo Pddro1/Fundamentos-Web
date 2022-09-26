@@ -4,6 +4,16 @@ body{
     font-family: 'PT Sans', sans-serif;
     background-color: #EEEEEE;
     margin: 0px;
+    text-align: center;
+}
+
+h1{
+    font-size:24px;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 20px;
+    background-color: black;
 }
 
 a{
@@ -18,12 +28,11 @@ nav{
     color: white;
     margin: 0px;
     font-size: 24px;
-    align-items: center
+    align-items: center;
 }
 
 .logo{
-    margin: 0px: 20px;
-    background-color:;
+    margin: 0px 20px;
     width: 55px;
     height: 55px;
 }
@@ -65,17 +74,19 @@ li:hover{
 
 .perfil{
     display: flex;
+    justify-content: center;
     width: 70vw;
     margin: 0px auto;
     background-color: #3E7C17; 
     padding: 20px;
     border-radius: 16px;
     color: white;
+    
 }
 
 .foto{
-    width: 500px;
-    border-radius: 12px 
+    width: 400px;
+    aspect-ratio: 1;
 }
 
 #dale{
@@ -88,16 +99,23 @@ li:hover{
     text-align: center;
 }
 
-#local{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
+
 
 .footer{
     background-color: #3E7C17;
     padding: 35px;
+    align-items: center;
+}
+
+.videos{
+    width: 65vw;
+    aspect-ratio: 16/9;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+    margin-top: 2rem;
+    
 }
 
 #copyright{
@@ -106,20 +124,53 @@ li:hover{
     flex-direction: row;
 }
 
-#links{
-    align-items: center;
+.contato{
+    display:flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.endereco{
+    font-family: 'PT Sans', sans-serif;
     color: black;
+    font-size: 1.250rem;
 }
 
-.form-control{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 27px;
+.mapa{
+    width: 35vw;
+    aspect-ratio:16/9;
+    border-radius: 8px;
+    box-shadow: 8px 8px 16px #4A314D88;
 }
 
-#enviar{
+.contato{
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: space-around;
 }
+
+input, textarea, button{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1rem
+}
+
+input,textarea{
+    border: 1px solid green;
+
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    background-color: tranparent;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+
+}
+
