@@ -28,7 +28,7 @@
 <div>      
 <main>
     <section>
-        <h1>Loud campeã Mundial de Valorant 2022</h1>
+        <h1 id="titulo"></h1>
         <div class="perfil">
         <article>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nisl lectus. Duis at quam nibh. Duis ullamcorper faucibus pellentesque. Aliquam porttitor, erat quis lacinia elementum, quam mauris tristique augue, ac egestas nibh purus nec justo. Nulla rhoncus lorem molestie elit fermentum, nec commodo nunc scelerisque. Quisque suscipit volutpat quam, eu hendrerit diam lacinia venenatis. Morbi vestibulum mauris nisi.Nullam id dui vel odio tincidunt faucibus non et neque. Donec mi ante, hendrerit sed nunc sit amet, ornare ultrices libero.
@@ -79,6 +79,41 @@
         </footer>
     </div>
 
-    
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+
+    <script src="<https://unpkg.com/typeit@8.7.0/dist/index.umd.js>"></script>
+
+<script>
+  new TypeIt("#titulo", {
+  speed: 50,
+  startDelay: 900,
+  loop: true,
+})
+  .type("oud canpe de Valarant", { delay: 100 })
+  .move(-12, { delay: 100 })
+  .type("ã", { delay: 400 })
+
+  .move(null, { to: "START", instant: false, delay: 300 })
+  .move(0, { delay: 200 })
+  
+  .type("L", { delay: 225 })
+  .pause(200)
+  .move(2, { instant: true })
+  .pause(200)
+  .move(5, { delay: 200 })
+  .delete(1)
+  .type("m", { delay: 350 })
+  .move(null, { to: "END" })
+  .type("")
+  .move(-4, { delay: 150 })
+  .delete(1)
+  .type("o")
+  .move(null, { to: "END" })
+  .type(' em <span class="place">2023</span>', { delay: 400 })
+  .delete(".place", { delay: 800, instant: true })
+  .type('<em><strong class="font-semibold">2022</strong></em>', {  
+  })
+  .go()
+</script>
 </body>
 </html>
