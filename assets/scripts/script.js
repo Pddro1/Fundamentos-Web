@@ -89,3 +89,4 @@ function mapaNormal() {
     mapa.style.width = '400px'
     mapa.style.height = '300px'
 }
+
